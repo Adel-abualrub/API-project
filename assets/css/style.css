@@ -1,0 +1,79 @@
+/* Image box */
+body{
+background-color: #FFF1F5 ;
+
+}
+.product-image-box {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+/* Category */
+.product-category {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #999;
+}
+
+/* Title */
+.product-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 10px 0;
+  color: #222;
+}
+
+/* Rating */
+.product-rating {
+  font-size: 1rem;
+  color: #f4b400;
+  margin-bottom: 10px;
+}
+
+/* Price */
+.product-price {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #E91E63;
+  margin-bottom: 10px;
+}
+
+/* Discount */
+.product-discount {
+  font-size: 1rem;
+  color: #388e3c;
+  margin-left: 10px;
+}
+
+/* Description */
+.product-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-top: 15px;
+}
+
+/* Stock */
+.product-stock {
+  font-size: 0.95rem;
+  color: #444;
+  margin-top: 10px;
+}
+
+/* Button */
+.product-actions .btn {
+  background-color: #E91E63;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 40px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.product-actions .btn:hover {
+  background-color: #d81b60;
+  transform: translateY(-2px);
+}
