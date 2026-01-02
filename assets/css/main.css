@@ -113,7 +113,7 @@ transform: scale(1.2);
   animation: fadeScale 0.3s ease;
 }
 
-/* Animation */
+
 @keyframes fadeScale {
   from {
     transform: scale(0.95);
@@ -123,4 +123,8 @@ transform: scale(1.2);
     transform: scale(1);
     opacity: 1;
   }
+}
+.dropdown-menu {
+  max-height: 300px;   /* أو 250px */
+  overflow-y: auto;
 }

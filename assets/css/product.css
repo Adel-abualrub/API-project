@@ -1,0 +1,32 @@
+
+.error-overlay {
+  position: relative;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.error-popup {
+  max-width: 420px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  animation: fadeScale 0.3s ease;
+}
+
+
+@keyframes fadeScale {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.dropdown-menu {
+  max-height: 300px;   /* أو 250px */
+  overflow-y: auto;
+}
