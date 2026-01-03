@@ -1,4 +1,6 @@
-
+body{
+  background-color: #FFF1F5;
+}
 .error-overlay {
   position: relative;
   min-height: 300px;
@@ -16,6 +18,7 @@
 }
 
 
+
 @keyframes fadeScale {
   from {
     transform: scale(0.95);
@@ -30,3 +33,80 @@
   max-height: 300px;   /* أو 250px */
   overflow-y: auto;
 }
+
+.product-card {
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Image */
+.product-img {
+  height: 220px;
+  object-fit: contain;
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* Body */
+.product-body {
+  text-align: center;
+}
+
+/* Title */
+.product-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+/* Price */
+.product-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #E91E63;
+  margin-bottom: 16px;
+}
+
+/* Actions */
+.product-actions {
+  justify-content: center;
+  gap: 12px;
+  margin-top: auto;
+}
+
+/* Buttons base */
+.product-actions .btn {
+  padding: 8px 18px;
+  font-size: 0.9rem;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+/* Buy button */
+.product-buy {
+  background-color: #E91E63;
+  border: none;
+}
+
+.product-buy:hover {
+  background-color: #d81b60;
+  transform: translateY(-2px);
+}
+
+/* Details button */
+
+
+.product-details:hover {
+  background-color: #E91E63;
+  color: #fff;
+}
+
