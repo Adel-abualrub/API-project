@@ -27,7 +27,7 @@ return `
 
           <div class="product-actions d-flex">
             <a href="#" class="btn btn-primary product-buy">Order Now</a>
-            <a href="#" class="btn btn-primary product-details">Details</a>
+            <a href="./product.html?id=${product.id}" class="btn btn-outline-danger product-details">Details</a>
           </div>
         </div>
       </div>
