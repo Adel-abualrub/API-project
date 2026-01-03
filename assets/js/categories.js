@@ -58,6 +58,40 @@ return response.data;
 
 const displayAllCategoriesProducts=async ()=>{
   const sortby=document.querySelector('#priceSort');
+
+
+const Products= await getProductByCategories(sortby.value);
+const result=Products.products.map((Pr)=>{
+return `
+
+    <div class="col-12 col-sm-6 col-lg-3 ">
+      <div class="card product-card h-100">
+        <img
+          src="${Pr.thumbnail}"
+          class="card-img-top product-img"
+          alt="Product"
+        >
+
+        <div class="card-body d-flex flex-column product-body">
+          <h5 class="product-title">${Pr.title}</h5>
+          <span class="product-price">${Pr.price}$</span>
+
+         <div class="product-actions d-flex">
+            <a href="#" class="btn btn-primary product-buy">Order Now</a>
+            <a href="#" class="btn btn-outline-danger product-details">Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+`
+
+
+}).join("")
+document.querySelector(".products").innerHTML=result;
+
+
+  
   sortby.addEventListener("change",async()=>{
 
 const Products= await getProductByCategories(sortby.value);
