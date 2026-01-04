@@ -1,4 +1,12 @@
-
+body{
+    background-color: #720e29;
+  color: #fff;
+}
+.main-nav{
+    position: sticky;
+    top: 0px;
+  z-index: 99999;
+}
 .error-overlay {
   position: relative;
   min-height: 300px;
