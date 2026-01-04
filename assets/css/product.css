@@ -7,6 +7,9 @@ body{
     top: 0px;
   z-index: 99999;
 }
+.offers{
+  cursor: not-allowed;
+}
 .error-overlay {
   position: relative;
   min-height: 300px;

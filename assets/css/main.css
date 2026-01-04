@@ -5,6 +5,10 @@ body{
 .main-nav{
     position: sticky;
     top: 0px;
+    z-index: 99999;
+}
+.offers{
+  cursor: not-allowed;
 }
 .Shop-btn{
     transition: .5s;
