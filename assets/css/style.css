@@ -1,13 +1,13 @@
-/* Image box */
-body{
-background-color: #FFF1F5 ;
+/* ===============================
+   PRODUCT DETAILS – COLOR TUNING
+   =============================== */
 
-}
+/* Image box */
 .product-image-box {
-  background-color: #fff;
-  border-radius: 16px;
+  background-color: #ffffff;
+  border-radius: 20px;
   padding: 30px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   text-align: center;
 }
 
@@ -16,7 +16,7 @@ background-color: #FFF1F5 ;
   font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #999;
+  color: #f3c6d4;
 }
 
 /* Title */
@@ -24,13 +24,13 @@ background-color: #FFF1F5 ;
   font-size: 2rem;
   font-weight: 700;
   margin: 10px 0;
-  color: #222;
+  color: #ffffff;
 }
 
 /* Rating */
 .product-rating {
   font-size: 1rem;
-  color: #f4b400;
+  color: #FFD54F;
   margin-bottom: 10px;
 }
 
@@ -38,21 +38,21 @@ background-color: #FFF1F5 ;
 .product-price {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #E91E63;
+  color: #ff4d8d;
   margin-bottom: 10px;
 }
 
 /* Discount */
 .product-discount {
   font-size: 1rem;
-  color: #388e3c;
+  color: #4CAF50;
   margin-left: 10px;
 }
 
 /* Description */
 .product-description {
   font-size: 1rem;
-  color: #555;
+  color: #e0e0e0;
   line-height: 1.6;
   margin-top: 15px;
 }
@@ -60,13 +60,14 @@ background-color: #FFF1F5 ;
 /* Stock */
 .product-stock {
   font-size: 0.95rem;
-  color: #444;
+  color: #d1d1d1;
   margin-top: 10px;
 }
 
 /* Button */
 .product-actions .btn {
-  background-color: #E91E63;
+  background-color: #ff2f73;
+  color: #ffffff;
   border: none;
   border-radius: 30px;
   padding: 12px 40px;
@@ -74,6 +75,6 @@ background-color: #FFF1F5 ;
 }
 
 .product-actions .btn:hover {
-  background-color: #d81b60;
+  background-color: #e91e63;
   transform: translateY(-2px);
 }
