@@ -84,6 +84,7 @@ return`
 document.querySelector(".categories").innerHTML = result;
 
 }
+
 catch (error) {
   document.querySelector(".products").innerHTML = `
   <div class="error-overlay">

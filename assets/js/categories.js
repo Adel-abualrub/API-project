@@ -52,6 +52,7 @@ const getProductByCategories = async (order = "asc", page) => {
 };
 
 const displayAllCategoriesProducts = async (page = 1) => {
+  try{
   const sortby = document.querySelector("#priceSort");
   const Products = await getProductByCategories(sortby.value, page);
 
@@ -143,7 +144,29 @@ const displayAllCategoriesProducts = async (page = 1) => {
   }
   document.querySelector(".pagination").innerHTML = Pagination;
   /*end pagination code*/
+  }
+  
+    
+catch (error) {
+  document.querySelector(".products").innerHTML = `
+  <div class="error-overlay">
+    <div class="error-popup card text-center p-4">
+      <h4 class="mb-3 text-danger">Unable to Load Products</h4>
 
+      <p class="text-muted mb-4">
+        Something went wrong while fetching the data.<br>
+        Please try again in a moment.
+      </p>
+
+      <button class="btn btn-danger px-4" onclick="displayProducts()">
+        Try Again
+      </button>
+    </div>
+  </div>
+`;
+
+}
+  
   
 };
 displayAllCategoriesProducts();
