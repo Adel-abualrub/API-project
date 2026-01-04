@@ -109,4 +109,66 @@ body{
   background-color: #E91E63;
   color: #fff;
 }
+.pagbtn{
+   border: none;
+}
 
+/* Pagination container */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 40px 0 20px;
+}
+
+/* Buttons */
+.pagination button {
+  min-width: 44px;
+  height: 44px;
+  padding: 0 14px;
+  border-radius: 14px;
+  border: 1.5px solid #ff3b7d;
+  background-color: #fff;
+  color: #ff3b7d;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 
+    background-color 0.25s ease,
+    color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* Hover (ناعم بدون حركة) */
+.pagination button:hover {
+  background-color: #ff3b7d;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(255, 59, 125, 0.25);
+}
+
+/* Active page */
+.pagination button.active,
+.pagination button:disabled {
+  background-color: #ff3b7d;
+  color: #fff;
+  border-color: #ff3b7d;
+  box-shadow: 0 8px 20px rgba(255, 59, 125, 0.25);
+  cursor: default;
+}
+
+/* Arrows */
+.pagination button span {
+  font-size: 18px;
+  line-height: 1;
+  transition: 1s;
+}
+.page-link{
+  border: none;
+  color: #ff3b7d;
+  transition: 1s;
+}
+.BTN:hover .page-link {
+  background-color: #ff3b7d;
+  color: white;
+}
